@@ -24,6 +24,14 @@
       <meta name="simplewebrtc-sound-test-output" content="/url-of-mp3-file" />
     -->
 
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <title>SimpleWebRTC Sample App</title>
     <style>
       body {
@@ -213,16 +221,15 @@
       <div></div>
     </template>
     <template id="homepage">
-      <div class="container">
-        <h1>
-          START A virtual classroom and teach YOUR PASSION
-
-        </h1>
-      </div>
-      <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Create your own private space for your video classes</h1>
+          <p class="lead">Take payments for  classes, 1:1 sessions and consultations in seconds </p>
+        </div>
+              <div class="container">
         <form class="create-room-form" method="GET" action="/">
           <span class="create-room-form-input-wrapper"
-            ><span class="domain">localhost/</span
+            ><span class="domain">gamladz.github.io/</span
             ><input
               type="text"
               name="room"
@@ -236,6 +243,9 @@
           </button>
         </form>
       </div>
+
+      </div>
+
     </template>
     <script type="text/javascript">
       const params = new URLSearchParams(window.location.search);
